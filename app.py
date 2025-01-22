@@ -43,9 +43,9 @@ def transform_text(text):
 tk = pickle.load(open("vectorizer.pkl",'rb'))
 model = pickle.load(open("model.pkl",'rb'))
 
-st.title("SMS Spam Detection Model")
-st.write("*Made by Shrirama Kamath*")
-st.write("During internship with Edunet")
+st.title(''':blue-background[SMS Spam Detection Model]''')
+st.write("*:orange[Made by Shrirama Kamath]*")
+st.write(":blue[During internship with Edunet ]")
 
 #get user data
 inputSMS = st.text_input("Enter the SMS here")
@@ -59,7 +59,6 @@ if st.button('Predict'):
     result = model.predict(vectorizedSMS)[0]
     # 4. Display
     if result == 1:
-        st.header("SPAM")
+        st.header(''':red[SPAM]''')
     else:
-        st.header("NOT SPAM")
-        
+        st.header(''':green[NOT SPAM]''') 
