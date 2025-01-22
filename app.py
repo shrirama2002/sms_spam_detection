@@ -59,6 +59,6 @@ if st.button('Predict'):
     result = model.predict(vectorizedSMS)[0]
     # 4. Display
     if result == 1:
-        st.header(''':red:red-background[SPAM]''')
+        st.header(''':red-background[:red[SPAM]]''')
     else:
-        st.header(''':green[NOT SPAM]''') 
+        st.header(''':green-background[:green[NOT SPAM]]''') 
