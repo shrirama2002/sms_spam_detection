@@ -45,7 +45,7 @@ model = pickle.load(open("model.pkl",'rb'))
 
 st.title(''':blue-background[SMS Spam Detection Model]''')
 st.write("*:orange[Made by Shrirama Kamath]*")
-st.write(":blue[During internship with Edunet ]")
+
 
 #get user data
 inputSMS = st.text_input("Enter the SMS here")
